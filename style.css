@@ -1,0 +1,260 @@
+  /* CSS layout */
+ :root {
+	--content-width: 900px;
+	--content-main-width: 550px;
+
+	--theme-primary: rgba(14, 184, 45, 0.65);
+	--theme-secondary: #08691A;
+	--theme-text: rgb(26, 26, 26);
+ } 
+ 
+ *, *::before, *::after {
+	box-sizing: border-box;
+ }
+
+  body {
+  	margin: 0;
+  	padding: 0;
+  	background-color: #FFF;
+	color: var(--theme-text);
+  }
+
+  a {
+  	text-decoration: none;
+  }
+
+  #main {
+	margin: auto;
+	width: var(--content-width);
+	box-shadow: 10px 0px 10px, -10px 0px 10px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+  }
+
+  #masthead {
+  	width: var(--content-width);
+  	height: 160px;
+  	background-color: #000;
+  	float: inherit;
+  }
+
+  #banner {
+	height: 100%;
+	width: 100%;
+  }
+
+  #top_nav {
+  	width: var(--content-width);
+  	height: 35px;
+  	background-color: var(--theme-secondary);
+	display: flex;
+  }
+
+  #top_nav_box {
+  	padding: 2px;
+  	width: var(--content-width);
+  	height: 35px;
+  }
+
+
+  #container {
+  	width: var(--content-width);
+  	background-color: white;
+	flex: 1;
+  }
+
+  #left_col {
+  	float: left;
+  	margin: 0px;
+  	padding: 0px;
+  	width: 180px;
+  	background-color: var(--theme-secondary);
+  }
+
+  #right_col {
+  	float: left;
+  	margin: 0px;
+  	padding: 0px;
+  	width: 180px;
+  	background-color: var(--theme-secondary);
+  }
+
+  #page_content {
+  	margin: auto;
+  	width: var(--content-main-width);
+  	min-height: 500px;
+  	padding: 10px;
+  }
+
+  #footer {
+	background-color: var(--theme-secondary);
+  	width: var(--content-width);
+  	height: 35px;
+	align-self: flex-end;
+  }
+
+  .footer_box {
+
+  	float: none;
+  	width: var(--content-width);
+  	height: 35px;
+	display: flex;
+	flex-direction: row;
+  }
+
+  .countries_woods_table {
+	width: 100%;
+	background-color: black;
+  }
+
+  .countries_woods_table th {
+	/* border: 1px solid; */
+	margin: 0px;
+	background-color: white;
+  }
+
+  .link_nav {
+  	float: left;
+  	height: 35px;
+	cursor: pointer;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 9.5rem;
+	transition-duration: 0.3s;
+  }
+  .link_nav:hover {
+	/* opacity: 0.7; */
+	font-size: 1.03rem;
+	background-color: #FFF;
+  }
+  .link_nav a {
+	color: var(--theme-text);
+  }
+
+  .link {
+  	padding-left: 10px;
+  	height: 20px;
+  	margin-bottom: 2px;
+
+  }
+
+  .link_selected {
+  	padding-left: 8px;
+  	height: 20px;
+  	margin-bottom: 2px;
+  	font-size: 1.2em;
+  	font-weight: 600;
+
+  }
+
+
+  .sub_link {
+  	padding-left: 20px;
+  	height: 20px;
+  	font-size: 0.9em;
+  	margin-bottom: 2px;
+
+  }
+
+  .sub_sub_link {
+  	padding-left: 30px;
+  	height: 20px;
+  	font-size: 0.8em;
+  	margin-bottom: 2px;
+
+  }
+
+
+  .module_title {
+  	font-weight: bold;
+  	font-size: medium;
+  	padding-left: 20px;
+  	height: 20px;
+  	margin-left: 20px;
+  	margin-top: 15px;
+  	margin-bottom: 15px;
+
+  }
+
+
+  .link_foot {
+	height: 35px;
+	cursor: pointer;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 9.5rem;
+	transition-duration: 0.3s;
+  }
+  .link_foot:hover {
+	/* opacity: 0.7; */
+	font-size: 1.03rem;
+	background-color: #FFF;
+  }
+  .link_foot a {
+	color: var(--theme-text);
+  }
+
+  .path {
+  	padding: 3px 3px 0px 1px;
+  	width: 200px;
+  	height: 20px;
+  	float: left;
+  	font-size: 0.8em;
+  }
+
+  h1.article_title {
+  	font: italic normal georgia, sans-serif;
+  	padding-bottom: 4px;
+  	letter-spacing: 1px;
+  	margin-bottom: 0;
+
+  	border-bottom-style: solid;
+  	border-bottom-width: thin;
+  }
+
+  div.article_summary {
+  	padding: 8px;
+  	color: var(--theme-text);
+  	border-bottom-style: solid;
+  	border-bottom-width: 1px;
+  }
+
+  div.article_summary div {
+  	font: italic normal 1.2em georgia, sans-serif;
+  	color: var(--theme-text);
+  	padding: 5px 10px 6px 15px;
+  }
+
+  div.article_content {
+  	margin: 10px;
+
+  }
+
+  p.p1 {
+  	font: italic normal 1.1em georgia, sans-serif;
+  	color: var(--theme-text);
+  	padding: 5px 10px 6px 15px;
+  }
+
+  p.p2 {
+  	font: normal 0.9em georgia, sans-serif;
+  	color: var(--theme-text);
+  	padding: 5px 10px 6px 15px;
+  }
+
+
+  .clear-padding-margin {
+	padding: 0px;
+	margin: 0px;
+  }
+
+  .main-content {
+	  padding: 1rem;
+  }
